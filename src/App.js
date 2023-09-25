@@ -34,3 +34,8 @@ const App = () => {
 };
 
 export default App;
+
+
+// git remote add origin https://github.com/Mohd1999-collb/ReactJs-Cheack-Deployment.git
+// git branch -M main
+// git push -u origin main
