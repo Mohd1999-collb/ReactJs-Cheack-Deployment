@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ReactJs-Cheack-Deployment/static/css/main.5dba190a.css",
+    "main.js": "/ReactJs-Cheack-Deployment/static/js/main.e5da5ae5.js",
+    "static/media/image.jpg": "/ReactJs-Cheack-Deployment/static/media/image.5ce22033e2818f66dbd9.jpg",
+    "index.html": "/ReactJs-Cheack-Deployment/index.html",
+    "main.5dba190a.css.map": "/ReactJs-Cheack-Deployment/static/css/main.5dba190a.css.map",
+    "main.e5da5ae5.js.map": "/ReactJs-Cheack-Deployment/static/js/main.e5da5ae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dba190a.css",
+    "static/js/main.e5da5ae5.js"
+  ]
+}
