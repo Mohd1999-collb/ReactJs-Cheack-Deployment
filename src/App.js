@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./component/Header";
+import Navbar from "./component/Navbar";
+import Section from "./component/Section";
+import "./style/style.css";
 
-function App() {
+const App = () => {
+  const arr = [
+    {
+      title: "Skills",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctioLorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctio",
+    },
+    {
+      title: "Experience",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctioLorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctio",
+    },
+    {
+      title: "Education",
+      des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctioLorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quae libero deleniti eligendi earum aspernatur? Quibusdam, laudantium enim dicta et harum omnis non mollitia incidunt doloribus cumque beatae exercitationem distinctio",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Navbar />
+      {arr.map((item, index) => {
+        return <Section title={item.title} des={item.des} />;
+      })}
+      {/* <h1>Hello World</h1>
+      <h1>Mohd Talib</h1> */}
+    </>
   );
-}
+};
 
 export default App;
